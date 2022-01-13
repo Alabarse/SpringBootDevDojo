@@ -1,3 +1,6 @@
+academy\devdojo\springbootessentials\services\AnimeService.class
 academy\devdojo\springbootessentials\domain\Anime.class
+academy\devdojo\springbootessentials\controller\AnimeController.class
+academy\devdojo\springbootessentials\repository\AnimeRepository.class
 academy\devdojo\springbootessentials\util\Date.class
 academy\devdojo\springbootessentials\SpringbootEssentialsApplication.class
