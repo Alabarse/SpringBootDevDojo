@@ -18,6 +18,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -25,35 +26,40 @@ import org.springframework.web.bind.annotation.RestController;
 @Log4j2
 @RequiredArgsConstructor
 public class AnimeController {
-    
+
     public final Date date;
-    public final AnimeService animeService;    
-    
+    public final AnimeService animeService;
+
     @GetMapping
     public ResponseEntity<List<Anime>> list() {
         log.info(date.formatLocalDateTimeToDataBaseStyle(LocalDateTime.now()));
         return new ResponseEntity<>(animeService.listAll(), HttpStatus.OK);
     }
-    
+
     @GetMapping("/{id}")
     public ResponseEntity<Anime> findById(@PathVariable long id) {
         return ResponseEntity.ok(animeService.findByIdOrElseThrowExeception(id));
     }
-    
-    @PostMapping
-    public ResponseEntity<Anime> save(@RequestBody AnimePostRequestBody anime) {
-        return new ResponseEntity<>(animeService.save(anime), HttpStatus.CREATED);
+
+    @GetMapping("/find")
+    public ResponseEntity<List<Anime>> findByName(@RequestParam(name = "name") String name) {
+        return ResponseEntity.ok(animeService.findByName(name));
     }
     
+    @PostMapping
+    public ResponseEntity<Anime> save(@RequestBody AnimePostRequestBody animePostRequestBody) {
+        return new ResponseEntity<>(animeService.save(animePostRequestBody), HttpStatus.CREATED);
+    }
+
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> delete(@PathVariable Long id) {
         animeService.delete(id);
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
-    
-    @PutMapping() 
+
+    @PutMapping()
     public ResponseEntity<Anime> replace(@RequestBody AnimePutRequestBody animePutRequestBody) {
         animeService.replace(animePutRequestBody);
-        return new ResponseEntity<Anime>(HttpStatus.NO_CONTENT);
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 }
