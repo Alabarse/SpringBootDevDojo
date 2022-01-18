@@ -1,11 +1,15 @@
 academy\devdojo\springbootessentials\requests\AnimePutRequestBody.class
 academy\devdojo\springbootessentials\services\AnimeService.class
-academy\devdojo\springbootessentials\mapper\AnimeMapper.class
+academy\devdojo\springbootessentials\exception\BadRequestExceptionDetails.class
 academy\devdojo\springbootessentials\domain\Anime$AnimeBuilder.class
 academy\devdojo\springbootessentials\domain\Anime.class
-academy\devdojo\springbootessentials\requests\AnimePostRequestBody.class
+academy\devdojo\springbootessentials\exception\BadRequestException.class
 academy\devdojo\springbootessentials\controller\AnimeController.class
 academy\devdojo\springbootessentials\repository\AnimeRepository.class
 academy\devdojo\springbootessentials\util\Date.class
+academy\devdojo\springbootessentials\exception\BadRequestExceptionDetails$BadRequestExceptionDetailsBuilder.class
+academy\devdojo\springbootessentials\handler\RestExceptionHandler.class
+academy\devdojo\springbootessentials\mapper\AnimeMapper.class
+academy\devdojo\springbootessentials\requests\AnimePostRequestBody.class
 academy\devdojo\springbootessentials\mapper\AnimeMapperImpl.class
 academy\devdojo\springbootessentials\SpringbootEssentialsApplication.class

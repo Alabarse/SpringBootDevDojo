@@ -4,6 +4,9 @@ D:\Mateus\Estudos Java\Java8\springboot-essentials\src\main\java\academy\devdojo
 D:\Mateus\Estudos Java\Java8\springboot-essentials\src\main\java\academy\devdojo\springbootessentials\domain\Anime.java
 D:\Mateus\Estudos Java\Java8\springboot-essentials\src\main\java\academy\devdojo\springbootessentials\util\Date.java
 D:\Mateus\Estudos Java\Java8\springboot-essentials\src\main\java\academy\devdojo\springbootessentials\mapper\AnimeMapper.java
+D:\Mateus\Estudos Java\Java8\springboot-essentials\src\main\java\academy\devdojo\springbootessentials\exception\BadRequestException.java
+D:\Mateus\Estudos Java\Java8\springboot-essentials\src\main\java\academy\devdojo\springbootessentials\handler\RestExceptionHandler.java
 D:\Mateus\Estudos Java\Java8\springboot-essentials\src\main\java\academy\devdojo\springbootessentials\SpringbootEssentialsApplication.java
 D:\Mateus\Estudos Java\Java8\springboot-essentials\src\main\java\academy\devdojo\springbootessentials\controller\AnimeController.java
+D:\Mateus\Estudos Java\Java8\springboot-essentials\src\main\java\academy\devdojo\springbootessentials\exception\BadRequestExceptionDetails.java
 D:\Mateus\Estudos Java\Java8\springboot-essentials\src\main\java\academy\devdojo\springbootessentials\services\AnimeService.java

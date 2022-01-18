@@ -15,6 +15,7 @@ import lombok.NoArgsConstructor;
 @Entity
 @Builder
 public class Anime {
+
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
     private Long id;
